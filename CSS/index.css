@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, white 0%, white 40%, #ebebeb 40%, #ebebeb 70%, white 70%, white 100%);
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+}
+
+nav ol {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 2px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    padding: 36px 48px 36px 48px;
+    transition: 0.1s;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.1s;
+}
+
+#menu-hamburguer {
+    background-color: #1b1b1b;
+    display: none;
+}
+
+#menu-hamburguer ol {
+    list-style-type: none;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+#menu-hamburguer li {
+    padding: 24px 0px 24px 0px;
+    border-top: 1px solid #646464;
+    width: 60%;
+    margin: auto;
+}
+
+/* #menu-hamburguer ol:last-child {
+    border-bottom: 1px solid #646464;
+} - Não funcionou :( */
+
+.last-li {
+    border-bottom: 1px solid #646464;
+}
+
+#menu-hamburguer a {
+    text-decoration: none;
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+    transition: 0.1s;
+    padding-bottom: 24px;
+}
+
+.img-title {
+    position: absolute;
+    margin-top: -100px;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.img-full {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    margin-left: 88px;
+}
+
+.logo-header {
+    float: right;
+    margin-top: 72px;
+}
+
+.logo-title {
+    font-family: Roboto Condensed, sans-serif;
+    color: white;
+    font-weight: 400;
+    background-color: black;
+    padding: 0px 4px 0px 4px;
+    width: 443px;
+    font-size: 55px;
+    margin: 0;
+}
+
+.logo-subtitle {
+    background-color: #EF3132;
+    font-family: Raleway, sans-serif;
+    color: white;
+    font-size: 55px;
+    width: 525px;
+    padding: 20px 20px 20px 72px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.first-p {
+    margin-top: 60%;
+}
+
+h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    width: 900px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+p {
+    width: 900px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 48px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+section {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.burger-menu {
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 2560px) {
+    .logo-header {
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    nav a {
+        font-size: 14px;
+    }
+
+    nav li {
+        margin-top: 40px;
+    }
+
+    .logo-header {
+        margin-top: 50px;
+    }
+
+    .logo-title {
+        font-size: 40px;
+        width: 322px;
+    }
+
+    .logo-subtitle {
+        font-size: 32px;
+        width: 340px;
+    }
+
+    .logo {
+        margin-left: 72px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav a {
+        padding: 36px 36px 36px 36px;
+    }
+
+    nav ol {
+        margin-top: -36px;
+    }
+
+    .logo-header {
+        margin-top: 24px;
+    }
+
+    .logo-title {
+        font-size: 32px;
+        width: 258px;
+    }
+
+    .logo-subtitle {
+        font-size: 24px;
+        width: 230px;
+    }
+
+    .logo {
+        margin-left: 45px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .burger-menu {
+        visibility: visible;
+        margin: 20px;
+    }
+
+    nav {
+        height: 75px;
+        width: 100%;
+        position: relative;
+        background-color: black;
+    }
+
+    .img-title {
+        position: relative;
+        margin-top: 0px;
+    }
+
+    nav ol {
+        visibility: hidden;
+    }
+
+    .first-p {
+        margin-top: 0;
+    }
+
+    p {
+        width: 75%;
+        font-size: 24px;
+    }
+
+    h2 {
+        width: 75%;
+        font-size: 40px;
+        margin-left: auto;
+        margin-top: 100px;
+    }
+
+    section {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .logo-header {
+        margin-top: -25%;
+        float: none;
+        text-align: center;
+    }
+
+    .logo-title {
+        font-size: 32px;
+        width: 258px;
+        margin: auto;
+    }
+
+    .logo-subtitle {
+        font-size: 24px;
+        width: 230px;
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .logo {
+        margin: auto;
+    }
+}
