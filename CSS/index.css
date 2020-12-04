@@ -5,24 +5,22 @@
 
 body {
     overflow-x: hidden;
-    background: linear-gradient(to bottom, white 0%, white 38%, #eeeeee 38%, #eeeeee 70%, white 70%, white 100%);
 }
 
 nav {
-    height: 100px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(6px);
 }
 
 nav ol {
-    text-align: center;
+    margin: auto;
     list-style-type: none;
-    margin-top: 2px;
 }
 
 nav li {
     display: inline-block;
+    padding-bottom: 36px;
 }
 
 nav a {
@@ -31,7 +29,7 @@ nav a {
     font-weight: 300;
     font-size: 18px;
     color: white;
-    padding: 36px 48px 36px 48px;
+    padding: 36px 40px 36px 40px;
     transition: 0.1s;
 }
 
@@ -39,6 +37,11 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.6);
     transition: 0.1s;
     text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 #menu-hamburguer {
@@ -54,7 +57,7 @@ nav a:hover {
 
 #menu-hamburguer li {
     padding: 24px 0px 24px 0px;
-    border-top: 1px solid #646464;
+    border-top: 1px solid #757575;
     width: 60%;
     margin: auto;
 }
@@ -64,7 +67,7 @@ nav a:hover {
 } - Não funcionou :( */
 
 .last-li {
-    border-bottom: 1px solid #646464;
+    border-bottom: 1px solid #757575;
 }
 
 #menu-hamburguer a {
@@ -116,8 +119,8 @@ nav a:hover {
     font-weight: 700;
     font-style: italic;
     color: white;
-    font-size: 64px;
-    width: 525px;
+    font-size: 56px;
+    width: 450px;
     padding: 20px 20px 20px 72px;
     text-align: right;
     margin-top: 20px;
@@ -202,9 +205,13 @@ footer {
 }
 
 hr {
-    border: 1px solid #646464;
+    border: 1px solid #757575;
     width: 90%;
     margin: auto;
+}
+
+.gray-back {
+    background-color: #eeeeee;
 }
 
 .newsletter-section {
@@ -258,7 +265,7 @@ input[type=text] {
     transition: 0.1s;
     box-sizing: border-box;
 	outline: none;
-	border: 1px solid #646464;
+	border: 1px solid #757575;
     line-height: 25px;
     border-radius: 5px;
 }
@@ -278,10 +285,6 @@ input[type=text]:focus {
 @media only screen and (max-width: 1366px) {
     nav a {
         font-size: 14px;
-    }
-
-    nav li {
-        margin-top: 4px;
     }
 
     .logo-header {
@@ -304,14 +307,6 @@ input[type=text]:focus {
 }
 
 @media only screen and (max-width: 1024px) {
-    nav a {
-        padding: 36px 36px 36px 36px;
-    }
-
-    nav ol {
-        margin-top: 0px;
-    }
-
     .logo-header {
         margin-top: 24px;
     }
@@ -367,7 +362,7 @@ input[type=text]:focus {
     }
 
     nav ol {
-        visibility: hidden;
+        display: none;
     }
 
     .first-p {
@@ -428,6 +423,18 @@ input[type=text]:focus {
 }
 
 @media only screen and (max-width: 700px) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    #menu-hamburguer {
+        position: sticky;
+        top: 74px;
+        z-index: 1;
+    }
+
     .description h3 {
         font-size: 14px;
     }

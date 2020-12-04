@@ -19,13 +19,18 @@
         <picture>
             <img class="burger-menu" src="img/menu.png" onclick="showMenu();">
         </picture>
-        <ol>
-            <li><a href="index.html">PÁGINA INICIAL</a></li>
-            <li><a href="index.html">NOSSOS ARTISTAS</a></li>
-            <li><a href="index.html">LANÇAMENTOS</a></li>
-            <li><a href="index.html">HISTÓRIA DO DUB</a></li>
-            <li><a href="newsletter.html">INSCREVA-SE</a></li>
-        </ol>
+        <!-- <figure>
+            <img src="img/crown-logo-small.png" width="100">
+        </figure> -->
+        <div class="flex-container">
+            <ol>
+                <li><a href="index.html">PÁGINA INICIAL</a></li>
+                <li><a href="index.html">NOSSOS ARTISTAS</a></li>
+                <li><a href="index.html">LANÇAMENTOS</a></li>
+                <li><a href="index.html">HISTÓRIA DO DUB</a></li>
+                <li><a href="newsletter.html">INSCREVA-SE</a></li>
+            </ol>
+        </div>
     </nav>
     <div id="menu-hamburguer">
         <ol>
@@ -37,9 +42,12 @@
         </ol>
     </div>
     <div class="description">
-        <a href='https://en.wikipedia.org/wiki/Lee_"Scratch"_Perry'><h3 class="artist-name">LEE "SCRATCH" PERRY</h3></a>
+        <a href='https://en.wikipedia.org/wiki/Lee_"Scratch"_Perry'>
+            <h3 class="artist-name">LEE "SCRATCH" PERRY</h3>
+        </a>
         <hr>
-        <p>Fundador do estúdio de gravação <a href="https://en.wikipedia.org/wiki/Black_Ark_Studios">Black Ark</a>, verdadeiro gênio e um dos principais nomes da arte do Dub Reggae.</p>
+        <p>Fundador do estúdio de gravação <a href="https://en.wikipedia.org/wiki/Black_Ark_Studios">Black Ark</a>,
+            verdadeiro gênio e um dos principais nomes da arte do Dub Reggae.</p>
     </div>
     <picture>
         <source media="(max-width:900px)" srcset="img/leescratchperry-small.png">
@@ -57,39 +65,55 @@
             <p class="logo-subtitle">Honrando o legado da Realeza do Dub</p>
         </section>
     </header>
-    <section class="first-p">
-        <h2>Sobre nós:</h2>
-        <p>Somos um coletivo independente homenageando o gênero musical jamaicano Dub e todas suas vertentes,
-            clássicas e modernas.</p>
-    </section>
-    <section>
-        <div class="description">
-            <a href="https://en.wikipedia.org/wiki/Scientist_(musician)"><h3 class="artist-name">SCIENTIST</h3></a>
-            <hr>
-            <p>Seu nome artístico foi cunhado por causa da sua proficiência técnica na mesa de som. Pupilo do pioneiro do Dub, King Tubby.</p>
-        </div>
-        <picture>
-            <source media="(max-width:900px)" srcset="img/scientist-small.png">
-            <img class="img-full" src="img/scientist.png" alt="Foto de Scientist">
-        </picture>
-        <h2>Honrando a história:</h2>
-        <p>Temos como principal objetivo trazer à tona a influência e importância histórica do Dub para a música como um
-            todo.</p>
-    </section>
-    <section>
-        <div class="description" style="right: 0;">
-            <a href="https://en.wikipedia.org/wiki/King_Tubby"><h3 class="artist-name">KING TUBBY</h3></a>
-            <hr>
-            <p>Gênio da engenheira de som, Rei do Dub e pioneiro do gênero. Suas contribuições para o mundo da música jamaicana são imensuráveis.</p>
-        </div>
-        <picture>
-            <source media="(max-width:900px)" srcset="img/kingtubby-small.png">
-            <img class="img-full" src="img/kingtubby.png" alt="Foto de King Tubby">
-        </picture>
-        <h2>Inscreva-se no nosso Newsletter:</h2>
-        <p>Visite nossa página de <a href="newsletter.html">Newsletter</a> para realizar sua inscrição e não perder
-            nenhum lançamento do nosso coletivo e de todos os principais artistas do Dub, além de outros benefícios exclusivos.</p>
-    </section>
+    <main>
+        <section class="first-p">
+            <h2>Sobre nós:</h2>
+            <p>Somos um coletivo independente homenageando o gênero musical jamaicano Dub e todas suas vertentes,
+                clássicas e modernas.</p>
+        </section>
+        <section>
+            <div class="description">
+                <a href="https://en.wikipedia.org/wiki/Scientist_(musician)">
+                    <h3 class="artist-name">SCIENTIST</h3>
+                </a>
+                <hr>
+                <p>Seu nome artístico foi cunhado por causa da sua proficiência técnica na mesa de som. Pupilo do
+                    pioneiro do Dub, King Tubby.</p>
+            </div>
+            <picture>
+                <source media="(max-width:900px)" srcset="img/scientist-small.png">
+                <img class="img-full" src="img/scientist.png" alt="Foto de Scientist">
+            </picture>
+            <div class="gray-back">
+                <h2>Honrando a história:</h2>
+                <p>Temos como principal objetivo trazer à tona a influência e importância histórica do Dub para a música
+                    como um
+                    todo.</p>
+            </div>
+        </section>
+        <section>
+            <div class="description" style="right: 0;">
+                <a href="https://en.wikipedia.org/wiki/King_Tubby">
+                    <h3 class="artist-name">KING TUBBY</h3>
+                </a>
+                <hr>
+                <p>Gênio da engenheira de som, Rei do Dub e pioneiro do gênero. Suas contribuições para o mundo da
+                    música jamaicana são imensuráveis.</p>
+            </div>
+            <picture>
+                <source media="(max-width:900px)" srcset="img/kingtubby-small.png">
+                <img class="img-full" src="img/kingtubby.png" alt="Foto de King Tubby">
+            </picture>
+            <h2>Inscreva-se no nosso Newsletter:</h2>
+            <p>Visite nossa página de <a href="newsletter.html">Newsletter</a> para realizar sua inscrição e não perder
+                nenhum lançamento do nosso coletivo e de todos os principais artistas do Dub, além de outros benefícios
+                exclusivos.</p>
+        </section>
+        <section>
+            <h2>Confira nossos últimos lançamentos:</h2>
+            
+        </section>
+    </main>
     <footer>
 
     </footer>
