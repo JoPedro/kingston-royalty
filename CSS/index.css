@@ -5,7 +5,6 @@
 
 body {
     overflow-x: hidden;
-    background: linear-gradient(to bottom, white 0%, white 38%, #eeeeee 38%, #eeeeee 70%, white 70%, white 100%);
 }
 
 nav {
@@ -78,11 +77,15 @@ nav a:hover {
 }
 
 .img-title {
-    position: absolute;
     margin-top: -100px;
     z-index: -1;
     width: 100%;
     height: auto;
+}
+
+header {
+    position: absolute;
+    top: 150px;
 }
 
 .img-full {
@@ -91,11 +94,10 @@ nav a:hover {
 }
 
 .logo {
-    margin-left: 36px;
+    margin-bottom: 12px;
 }
 
 .logo-header {
-    float: right;
     margin-top: 72px;
 }
 
@@ -103,15 +105,16 @@ nav a:hover {
     font-family: Teko, sans-serif;
     color: white;
     font-weight: 100;
-    background-color: black;
-    padding: 8px 4px 0px 6px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 6px 4px 0px 6px;
     width: 322px;
     font-size: 64px;
-    margin: 0;
+    margin-top: 0;
 }
 
 .logo-subtitle {
-    background-color: #EF3132;
+    background-color: #ef3232;
     font-family: Teko, sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -119,12 +122,12 @@ nav a:hover {
     font-size: 64px;
     width: 525px;
     padding: 20px 20px 20px 72px;
-    text-align: right;
     margin-top: 20px;
+    margin-left: 0;
 }
 
-.first-p {
-    margin-top: 60%;
+section h2:first-child {
+    margin-top: 100px;
 }
 
 h2 {
@@ -231,7 +234,7 @@ hr {
 
 .form-section {
     padding-top: 100px;
-    background-color: #EF3132;
+    background-color: #ef3232;
     width: 50%;
     margin: auto;
 }
@@ -370,10 +373,6 @@ input[type=text]:focus {
         visibility: hidden;
     }
 
-    .first-p {
-        margin-top: 0;
-    }
-
     p {
         width: 75%;
         font-size: 24px;
@@ -408,10 +407,11 @@ input[type=text]:focus {
         width: 200px;
         text-align: center;
         padding: 20px 20px 20px 20px;
+        margin-left: auto;
     }
 
     .logo {
-        margin: auto;
+        margin-left: auto;
     }
 
     .description h3 {
