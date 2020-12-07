@@ -215,7 +215,7 @@ hr {
     background-color: white;
     width: 50%;
     margin: auto;
-    margin-top: 35%;
+    margin-top: 33%;
 }
 
 .newsletter-section p {
@@ -289,6 +289,10 @@ input[type=text]:focus {
         width: 244px;
     }
 
+    .newsletter-section {
+        margin-top: 30%;
+    }
+
     .logo-subtitle {
         font-size: 45px;
         width: 340px;
@@ -312,6 +316,10 @@ input[type=text]:focus {
 
     p {
         font-size: 40px;
+    }
+
+    .newsletter-section p {
+        font-size: 32px;
     }
 
     .description {
