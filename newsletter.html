@@ -38,7 +38,7 @@
             <li class="last-li"><a href="envios.html">ENVIE SEU TRABALHO</a></li>
         </ol>
     </div>
-    <div class="description" style="right: 0;">
+    <div class="description description-newsletter">
         <a href="https://en.wikipedia.org/wiki/Scientist_(musician)">
             <h3 class="artist-name">DEEPCHORD</h3>
         </a>
@@ -46,6 +46,7 @@
         <p>Rod Modell, também conhecido como DeepChord é um produtor e DJ proeminente de Dub Techno e Ambient Dub.</p>
     </div>
     <picture>
+        <source media="(max-width:900px)" srcset="img/rod-modell-tablet.png">
         <img class="img-title" src="img/rod-modell.png" style="position: absolute">
     </picture>
     <section class="newsletter-section">
@@ -58,6 +59,8 @@
         <form method="POST" action="newsletter.html">
             <label for="nome">Nome: </label>
             <input type="text" name="nome">
+            <label for="nome">Email: </label>
+            <input type="email" name="email">
         </form>
     </section>
     <footer>

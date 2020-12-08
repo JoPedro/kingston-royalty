@@ -241,7 +241,7 @@ hr {
 }
 
 form {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
@@ -252,7 +252,7 @@ label {
     color: white;
 }
 
-input[type=text] {
+input[type=text], input[type=email], input[type=password] {
     margin-top: 16px;
     margin-bottom: 24px;
     padding: 4px 8px 4px 8px;
@@ -267,7 +267,7 @@ input[type=text] {
     border-radius: 5px;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
 	box-shadow: 1px 1px 8px #266029;
     border: 1px solid #266029;
     transition: 0.1s;
@@ -297,6 +297,10 @@ input[type=text]:focus {
         font-size: 45px;
         width: 340px;
     }
+
+    .description-newsletter {
+        margin-top: 10%;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -318,13 +322,21 @@ input[type=text]:focus {
         font-size: 40px;
     }
 
+    .newsletter-section h1 {
+        font-size: 48px;
+    }
+
     .newsletter-section p {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .description {
         width: 38%;
         margin-top: 15%;
+    }
+
+    .description-newsletter {
+        margin-top: 10%;
     }
 
     .description h3 {
@@ -390,7 +402,7 @@ input[type=text]:focus {
         margin-left: auto;
     }
 
-    .description:nth-child(3) {
+    .description-index {
         left: 0;
     }
 
@@ -406,33 +418,55 @@ input[type=text]:focus {
         width: 38%;
     }
 
+    .description-newsletter {
+        margin-top: 8%;
+        right: 0;
+    }
+
     section:first-child {
         margin-top: -100px;
     }
-}
 
-@media only screen and (max-width: 700px) {
-    .description h3 {
-        font-size: 14px;
+    .newsletter-section {
+        margin-top: 55%;
+        width: 75%;
     }
 
-    .description:nth-child(3) {
-        margin-top: 50px;
+    .form-section {
+        width: 75%;
     }
 
-    .description {
-        width: 40%;
-        margin-top: 100px;
+    .newsletter-section p {
+        font-size: 24px;
     }
 
-    .logo-header {
-        position: relative
+    .newsletter-section h1 {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    form {
+        width: 75%;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .description:nth-child(3) {
+    .description-index {
         left: initial;
         right: 0;
+    }
+
+    .newsletter-section p {
+        font-size: 17px;
+    }
+
+    .newsletter-section h1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 28px;
     }
 }
