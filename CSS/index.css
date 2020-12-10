@@ -39,6 +39,19 @@ nav a:hover {
     text-decoration: none;
 }
 
+nav figure {
+    margin-top: -24px;
+    margin-left: 12px;
+}
+
+figure a {
+    padding: 0;
+}
+
+figure a:hover {
+    background-color: initial;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
@@ -145,7 +158,7 @@ p {
     padding-bottom: 100px;
 }
 
-section:first-child {
+.first-p {
     margin-bottom: 50px;
 }
 
@@ -162,7 +175,8 @@ a:hover {
 footer {
     background-color: black;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 100px;
+    width: 100%;
 }
 
 .burger-menu {
@@ -234,7 +248,8 @@ hr {
 }
 
 .form-section {
-    padding-top: 100px;
+    padding-top: 75px;
+    padding-bottom: 150px;
     background-color: #ef3232;
     width: 50%;
     margin: auto;
@@ -268,9 +283,204 @@ input[type=text], input[type=email], input[type=password] {
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
-	box-shadow: 1px 1px 8px #266029;
-    border: 1px solid #266029;
+	box-shadow: 1px 0px 8px white;
+    border: 1px solid white;
     transition: 0.1s;
+}
+
+input[type=submit] {
+    width: 100%;
+    border: 1px solid #f9c63c;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    background-color: #f9c63c;
+    font-weight: 700;
+    transition: 0.1s;
+}
+
+input[type=submit]:hover {
+	box-shadow: 1px 0px 8px #f9c63c;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+input[type=submit]:active {
+    outline: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+footer h2 {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    width: initial;
+    padding: 20px;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    white-space: pre-line;
+}
+
+footer table {
+    display: block;
+}
+
+footer div {
+    float: left;
+    padding: 40px 0px 0px 40px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 20px;
+}
+
+.artist-description {
+    width: 40%;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 14%;
+    z-index: 1;
+    background-color: white;
+}
+
+.artist-description h2 {
+    background-color: #ef3232;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+}
+
+.artist-description p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    font-size: 32px;
+}
+
+/*Slides*/
+.slides-main h1 {
+    font-family: Roboto, sans-serif;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    font-size: 72px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.slides-main a {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.slides-h1 {
+    font-size: 48px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides:first-child {
+    display: block;
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+    color: black;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 @media only screen and (min-width: 2560px) {
@@ -423,21 +633,24 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
         right: 0;
     }
 
-    section:first-child {
-        margin-top: -100px;
-    }
-
     .newsletter-section {
         margin-top: 55%;
         width: 75%;
     }
 
+    .first-p {
+        margin-top: -100px;
+    }
+
     .form-section {
         width: 75%;
+        padding-top: 1px;
+        padding-bottom: 50px;
     }
 
     .newsletter-section p {
         font-size: 24px;
+        padding-bottom: 40px;
     }
 
     .newsletter-section h1 {
@@ -447,6 +660,15 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
 
     label {
         font-size: 18px;
+    }
+
+    input[type=text], input[type=email], input[type=submit] {
+        height: 30px;
+        font-size: 18px;
+    }
+
+    input[type=submit] {
+        padding-bottom: 40px;
     }
 
     form {
@@ -460,6 +682,10 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
         right: 0;
     }
 
+    .newsletter-section {
+        margin-top: 80%;
+    }
+
     .newsletter-section p {
         font-size: 17px;
     }
@@ -468,5 +694,21 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
         padding-top: 50px;
         padding-bottom: 50px;
         font-size: 28px;
+    }
+
+    footer h2 {
+        font-size: 16px;
+    }
+
+    footer p, footer a {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .prev, .next,.text {
+        font-size: 11px
     }
 }
