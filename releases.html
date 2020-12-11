@@ -14,8 +14,8 @@
     <script src="JS/index.js"></script>
 </head>
 
-<body style="background: #eeeeee;">
-    <nav>
+<body>
+    <nav style="background-color: black;">
         <picture>
             <img class="burger-menu" src="img/menu.png" onclick="showMenu();" alt="Ícone do Menu Mobile">
         </picture>
@@ -41,37 +41,59 @@
             <li><a href="newsletter.html">INSCREVA-SE</a></li>
         </ol>
     </div>
-    <div class="description description-newsletter">
-        <a href="https://en.wikipedia.org/wiki/Scientist_(musician)">
-            <h3 class="artist-name">DEEPCHORD</h3>
-        </a>
-        <hr>
-        <p>Rod Modell, também conhecido como DeepChord é um produtor e DJ proeminente de Dub Techno e Ambient Dub.</p>
-    </div>
-    <picture>
-        <source media="(max-width:500px)" srcset="img/rod-modell-small.png">
-        <source media="(max-width:900px)" srcset="img/rod-modell-tablet.png">
-        <img class="img-title" src="img/rod-modell.png" style="position: absolute" alt="Foto de Rod Modell">
-    </picture>
-    <main>
-        <section class="newsletter-section">
-            <h1>Newsletter</h1>
-            <p>Preencha esté formulário para se inscrever no nosso Newsletter e garantir seus benefícios, como
-                receber atualizações sempre que há algum lançamento novo de um artista do nosso coletivo ou de algum dos
-                artistas principais do Dub</p>
+    <main class="slides-main">
+        <section class="releases-section">
+            <h1 style="margin-top: 100px">Nossos Lançamentos</h1>
+            <h2>Artista 1:</h2>
+            <ol>
+                <li>
+                    <img src="img/artist1album1.png" alt="Imagem do Album 1 do Artista 1">
+                    <h3>Album 1</h3>
+                </li>
+                <li>
+                    <img src="img/artist1album2.png" alt="Imagem do Album 2 do Artista 1">
+                    <h3>Album 2</h3>
+                </li>
+                <li>
+                    <img src="img/artist1album3.png" alt="Imagem do Album 3 do Artista 1">
+                    <h3>Album 3</h3>
+                </li>
+            </ol>
         </section>
-        <div class="form-section">
-            <h2></h2>
-            <form method="POST" action="newsletter.html">
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome">
-                <label for="sobrenome">Sobrenome: </label>
-                <input type="text" name="sobrenome">
-                <label for="e-mail">E-mail: </label>
-                <input type="email" name="e-mail">
-                <input type="submit" value="INSCREVER" />
-            </form>
-        </div>
+        <section class="releases-section">
+            <h2>Artista 2:</h2>
+            <ol>
+                <li>
+                    <img src="img/artist2album1.png" alt="Imagem do Album 1 do Artista 2">
+                    <h3>Album 1</h3>
+                </li>
+                <li>
+                    <img src="img/artist2album2.png" alt="Imagem do Album 2 do Artista 2">
+                    <h3>Album 2</h3>
+                </li>
+            </ol>
+        </section>
+        <section class="releases-section">
+            <h2>Artista 3:</h2>
+            <ol>
+                <li>
+                    <img src="img/artist3album1.png" alt="Imagem do Album 1 do Artista 3">
+                    <h3>Album 1</h3>
+                </li>
+                <li>
+                    <img src="img/artist3album2.png" alt="Imagem do Album 2 do Artista 3">
+                    <h3>Album 2</h3>
+                </li>
+                <li>
+                    <img src="img/artist3album3.png" alt="Imagem do Album 3 do Artista 3">
+                    <h3>Album 3</h3>
+                </li>
+                <li>
+                    <img src="img/artist3album4.png" alt="Imagem do Album 4 do Artista 3">
+                    <h3>Album 4</h3>
+                </li>
+            </ol>
+        </section>
     </main>
     <footer>
         <div style="width: 50%; margin: auto;">

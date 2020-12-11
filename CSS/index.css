@@ -216,10 +216,19 @@ footer {
     color: white;
 }
 
+.description-historia {
+    margin-top: 400px;
+    left: 0;
+}
+
 hr {
     border: 1px solid #757575;
     width: 90%;
     margin: auto;
+}
+
+section:last-child {
+    margin-bottom: 150px;
 }
 
 .newsletter-section {
@@ -331,7 +340,7 @@ footer p {
     white-space: pre-line;
 }
 
-footer table {
+footer ul {
     display: block;
 }
 
@@ -353,9 +362,9 @@ footer a {
 
 .artist-description {
     width: 40%;
+    margin-left: 14%;
     position: absolute;
     margin-top: 10%;
-    margin-left: 14%;
     z-index: 1;
     background-color: white;
 }
@@ -364,7 +373,7 @@ footer a {
     background-color: #ef3232;
     color: white;
     margin: 0;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     font-size: 48px;
     text-align: center;
     width: 100%;
@@ -373,10 +382,11 @@ footer a {
 .artist-description p {
     margin: 0;
     padding: 0;
-    width: 100%;
-    padding: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
     background-color: white;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 /*Slides*/
@@ -494,6 +504,22 @@ footer a {
     padding: 32px 64px 32px 64px;
 }
 
+.releases-section ol {
+    display: block;
+    text-align: center;
+}
+
+.releases-section li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.releases-section h3 {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+}
+
 @media only screen and (min-width: 2560px) {
     .logo-header {
         margin-top: 300px;
@@ -521,6 +547,27 @@ footer a {
 
     .description-newsletter {
         margin-top: 10%;
+    }
+
+    .description-historia {
+        margin-top: 300px;
+    }
+
+    .historia-h1 {
+        font-size: 56px;
+        width: 450px;
+    }
+
+    .releases-section h1 {
+        font-size: 64px;
+    }
+
+    .artist-description h2 {
+        font-size: 40px;
+    }
+
+    .artist-description p {
+        font-size: 20px;
     }
 }
 
@@ -561,7 +608,19 @@ footer a {
     }
 
     .description h3 {
-        font-size: 24p;
+        font-size: 24px;
+    }
+
+    .description-historia {
+        margin-top: 50px;
+    }
+
+    .artist-description h2 {
+        font-size: 32px;
+    }
+
+    .artist-description p {
+        font-size: 16px;
     }
 }
 
@@ -689,6 +748,34 @@ footer a {
     form {
         width: 75%;
     }
+
+    .description-historia {
+        margin-top: 32px;
+    }
+
+    .historia-h1 {
+        font-size: 40px;
+        width: 300px;
+    }
+
+    .releases-section h1 {
+        font-size: 56px;
+    }
+
+    .slides-main h1 {
+        font-size: 48px;
+    }
+
+    .artist-description {
+        margin-bottom: -24px;
+    }
+
+    .artist-description {
+        z-index: -1;
+        position: relative;
+        margin: auto;
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -725,5 +812,36 @@ footer a {
 
     .prev, .next,.text {
         font-size: 11px
+    }
+
+    .description-historia {
+        margin-top: 32px;
+    }
+
+    .historia-h1 {
+        font-size: 32px;
+        width: 250px;
+        margin-top: 64px;
+        padding: 8px 16px 8px 16px;
+    }
+
+    .releases-section h1 {
+        font-size: 40px;
+    }
+
+    .releases-section h2 {
+        font-size: 32px;
+    }
+
+    .slides-main h1 {
+        font-size: 36px;
+    }
+
+    .artist-description h2 {
+        font-size: 24px;
+    }
+
+    .artist-description p {
+        font-size: 14px;
     }
 }

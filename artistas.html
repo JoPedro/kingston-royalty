@@ -72,22 +72,31 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="img/artist-1.png" style="width:100%" alt="Foto do Artista 1">
+                <picture>
+                    <source media="(max-width:900px)" srcset="img/artist-1-small.png">
+                    <img src="img/artist-1.png" style="width:100%" alt="Foto do Artista 1">
+                </picture>           
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="img/artist-2.png" style="width:100%" alt="Foto do Artista 2">
+                <picture>
+                    <source media="(max-width:900px)" srcset="img/artist-2-small.png">
+                    <img src="img/artist-2.png" style="width:100%" alt="Foto do Artista 2">
+                </picture>   
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="img/artist-3.png" style="width:100%" alt="Foto do Artista 3">
+                <picture>
+                    <source media="(max-width:900px)" srcset="img/artist-3-small.png">
+                    <img src="img/artist-3.png" style="width:100%" alt="Foto do Artista 3">
+                </picture>   
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
 
-        <div style="text-align:center;">
+        <div style="text-align:center; margin-bottom: 150px;">
             <span class="dot active" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -99,12 +108,12 @@
             <p>Fone: 99999-9999
                 E-mail: kingstonroyalty@gmail.com</p>
             <h2>Redes sociais:</h2>
-            <table>
+            <ul>
                 <li><a href="https://youtube.com">YouTube</a></li>
                 <li><a href="https://instagram.com">Instagram</a></li>
                 <li><a href="https://twitter.com">Twitter</a></li>
                 <li><a href="https://facebook.com">Facebook</a></li>
-            </table>
+            </ul>
         </div>
     </footer>
 </body>
