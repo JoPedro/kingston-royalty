@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingston Royalty</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="icon" href="img/crown-logo-icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;700&display=swap" rel="stylesheet">
+    <script src="JS/index.js"></script>
+</head>
+
+<body style="background: #eeeeee;">
+    <nav>
+        <picture>
+            <img class="burger-menu" src="img/menu.png" onclick="showMenu();" alt="Ícone do Menu Mobile">
+        </picture>
+        <div class="flex-container">
+            <figure>
+                <a href="BR_index.html"><img src="img/crown-logo-smallest.png" alt="Logo menor de Kingston Royalty"></a>
+            </figure>
+            <ol>
+                <li><a href="BR_index.html">PÁGINA INICIAL</a></li>
+                <li><a href="BR_artistas.html">NOSSOS ARTISTAS</a></li>
+                <li><a href="BR_releases.html">LANÇAMENTOS</a></li>
+                <li><a href="BR_historia.html">HISTÓRIA DO DUB</a></li>
+                <li><a href="BR_newsletter.html">INSCREVA-SE</a></li>
+            </ol>
+        </div>
+        <div class="flex-container flags">
+            <ol>
+                <li><a href="EN_newsletter.html"><img src="img/united-states.png" alt="Ícone da bandeira dos Estados Unidos"></a></li>
+                <li><a href="BR_newsletter.html"><img src="img/brazil.png" alt="Ícone da bandeira do Brasil"></a></li>
+            </ol>
+        </div>
+    </nav>
+    <div id="menu-hamburguer">
+        <ol>
+            <li><a href="BR_index.html">PÁGINA INICIAL</a></li>
+            <li><a href="BR_artistas.html">NOSSOS ARTISTAS</a></li>
+            <li><a href="BR_releases.html">LANÇAMENTOS</a></li>
+            <li><a href="BR_historia.html">HISTÓRIA DO DUB</a></li>
+            <li><a href="BR_newsletter.html">INSCREVA-SE</a></li>
+        </ol>
+    </div>
+    <div class="description description-newsletter">
+        <a href="https://en.wikipedia.org/wiki/Scientist_(musician)">
+            <h3 class="artist-name">DEEPCHORD</h3>
+        </a>
+        <hr>
+        <p>Rod Modell, também conhecido como DeepChord é um produtor e DJ proeminente de Dub Techno e Ambient Dub.</p>
+    </div>
+    <picture>
+        <source media="(max-width:500px)" srcset="img/rod-modell-small.png">
+        <source media="(max-width:900px)" srcset="img/rod-modell-tablet.png">
+        <img class="img-title" src="img/rod-modell.png" style="position: absolute" alt="Foto de Rod Modell">
+    </picture>
+    <main>
+        <section class="newsletter-section">
+            <h1>Newsletter</h1>
+            <p>Preencha este formulário para se inscrever no nosso Newsletter e garantir seus benefícios, como
+                receber atualizações sempre que há algum lançamento novo de um artista do nosso coletivo ou de algum dos
+                artistas principais do Dub</p>
+        </section>
+        <div class="form-section">
+            <h2></h2>
+            <form method="POST" action="newsletter.html">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome">
+                <label for="sobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome">
+                <label for="e-mail">E-mail: </label>
+                <input type="email" name="e-mail">
+                <input type="submit" value="INSCREVER" />
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div style="width: 50%; margin: auto;">
+            <h2>Contato:</h2>
+            <p>Fone: 99999-9999
+                E-mail: kingstonroyalty@gmail.com</p>
+            <h2>Redes sociais:</h2>
+            <ul>
+                <li><a href="https://youtube.com">YouTube</a></li>
+                <li><a href="https://instagram.com">Instagram</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://facebook.com">Facebook</a></li>
+            </ul>
+            <p>Desenvolvido por: João Pedro
+            Co-traduzido por: Paulo Henrique</p>
+        </div>
+    </footer>
+</body>
+
+</html>

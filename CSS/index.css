@@ -520,6 +520,28 @@ footer a {
     font-style: italic;
 }
 
+.flags {
+    background-color: black;
+    right: 0;
+    height: 40px;
+    border-bottom-left-radius: 15px;
+    border-left: 1px solid #646464;
+    border-bottom: 1px solid #646464;
+    position: absolute;
+}
+
+.flags li {
+    margin: 8px;
+}
+
+.flags a {
+    padding: 0;
+}
+
+.flags a:hover {
+    background-color: initial;
+}
+
 @media only screen and (min-width: 2560px) {
     .logo-header {
         margin-top: 300px;

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingston Royalty</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="icon" href="img/crown-logo-icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;700&display=swap" rel="stylesheet">
+    <script src="JS/index.js"></script>
+</head>
+
+<body>
+    <nav style="background-color: black;">
+        <picture>
+            <img class="burger-menu" src="img/menu.png" onclick="showMenu();" alt="Ícone do Menu Mobile">
+        </picture>
+        <div class="flex-container">
+            <figure>
+                <a href="BR_index.html"><img src="img/crown-logo-smallest.png" alt="Logo menor de Kingston Royalty"></a>
+            </figure>
+            <ol>
+                <li><a href="BR_index.html">PÁGINA INICIAL</a></li>
+                <li><a href="BR_artistas.html">NOSSOS ARTISTAS</a></li>
+                <li><a href="BR_releases.html">LANÇAMENTOS</a></li>
+                <li><a href="BR_historia.html">HISTÓRIA DO DUB</a></li>
+                <li><a href="BR_newsletter.html">INSCREVA-SE</a></li>
+            </ol>
+        </div>
+        <div class="flex-container flags">
+            <ol>
+                <li><a href="EN_artists.html"><img src="img/united-states.png"
+                            alt="Ícone da bandeira dos Estados Unidos"></a></li>
+                <li><a href="BR_artistas.html"><img src="img/brazil.png" alt="Ícone da bandeira do Brasil"></a></li>
+            </ol>
+        </div>
+    </nav>
+    <div id="menu-hamburguer">
+        <ol>
+            <li><a href="BR_index.html">PÁGINA INICIAL</a></li>
+            <li><a href="BR_artistas.html">NOSSOS ARTISTAS</a></li>
+            <li><a href="BR_releases.html">LANÇAMENTOS</a></li>
+            <li><a href="BR_historia.html">HISTÓRIA DO DUB</a></li>
+            <li><a href="BR_newsletter.html">INSCREVA-SE</a></li>
+        </ol>
+    </div>
+    <main class="slides-main">
+        <h1>Nossos Artistas</h1>
+        <section class="artist-desc artist-description">
+            <h2>Nome do Artista 1</h2>
+            <p>Descrição do Artista 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </section>
+        <section class="artist-desc artist-description" style="display: none;">
+            <h2>Nome do Artista 2</h2>
+            <p>Descrição do Artista 2. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+        </section>
+        <section class="artist-desc artist-description" style="display: none;">
+            <h2>Nome do Artista 3</h2>
+            <p>Descrição do Artista 3. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                voluptas assumenda est.</p>
+        </section>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <picture>
+                    <source media="(max-width:900px)" srcset="img/artist-1-small.png">
+                    <img src="img/artist-1.png" style="width:100%" alt="Foto do Artista 1">
+                </picture>           
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <picture>
+                    <source media="(max-width:900px)" srcset="img/artist-2-small.png">
+                    <img src="img/artist-2.png" style="width:100%" alt="Foto do Artista 2">
+                </picture>   
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <picture>
+                    <source media="(max-width:900px)" srcset="img/artist-3-small.png">
+                    <img src="img/artist-3.png" style="width:100%" alt="Foto do Artista 3">
+                </picture>   
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center; margin-bottom: 150px;">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
+    <footer>
+        <div style="width: 50%; margin: auto;">
+            <h2>Contato:</h2>
+            <p>Fone: 99999-9999
+                E-mail: kingstonroyalty@gmail.com</p>
+            <h2>Redes sociais:</h2>
+            <ul>
+                <li><a href="https://youtube.com">YouTube</a></li>
+                <li><a href="https://instagram.com">Instagram</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://facebook.com">Facebook</a></li>
+            </ul>
+            <p>Desenvolvido por: João Pedro
+            Co-traduzido por: Paulo Henrique</p>
+        </div>
+    </footer>
+</body>
+
+</html>
